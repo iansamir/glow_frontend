@@ -1,0 +1,118 @@
+* {
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  cursor: default;
+}
+
+body {
+  background-image: linear-gradient(152deg, #fff, #ABCDFF, #FFA6FF);
+  height: 100vh;
+}
+
+#login-container{
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+img {
+  width: 200px;
+}
+
+#prompt {
+  margin: 30px;
+  width: 80%;
+  font-size: 20px;
+  outline: none;
+}
+
+#login-form{
+  margin-top: 25%;
+  margin-left: 15%;
+}
+
+.container {
+  max-width: 225px;
+  max-height: 225px;
+  display: flex;
+  /*justify-content: center;*/
+  align-items: center;
+  margin-left: 0%;
+  width: 20vw;
+  height: 20vw;
+  border-radius: 100%;
+  background: linear-gradient(165deg, rgba(255, 255, 255, 1) 0%, rgb(220, 220, 220) 40%, rgb(170, 170, 170) 98%, rgb(10, 10, 10) 100%);
+  position: relative;
+}
+
+.disc {
+  display: flex;
+  /*justify-content: center;*/
+  align-items: center;
+}
+
+.disc:before {
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+  border-bottom: 0 solid #ffffff05;
+
+  box-shadow:
+      0 -10px 20px 20px #ffffff40 inset,
+      0 -5px 15px 10px #ffffff50 inset,
+      0 -2px 5px #ffffff80 inset,
+      0 -3px 2px #ffffffBB inset,
+      0 2px 0px #ffffff,
+      0 2px 3px #ffffff,
+      0 5px 5px #ffffff90,
+      0 10px 15px #ffffff60,
+      0 10px 20px 20px #ffffff40;
+  filter: blur(3px);
+  animation: 1s rotate linear infinite;
+}
+
+@keyframes rotate {
+  100% {
+      transform: rotate(360deg)
+  }
+}
+
+
+.title {
+  font-family: Helvetica;
+  font-weight: 300;
+  font-size: 45px;
+}
+
+button {
+  position: relative;
+  /* bottom: -30%; */
+  background-image: linear-gradient(90deg, #4fb, #4fe);
+  font-size: 18px;
+  color: #fff;
+  border: none;
+  padding: 15px;
+  width: 150px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px 1px #4fb;
+  backdrop-filter: blur(15px);
+  margin-top: 30%;
+  margin-left: 5%;
+}
+
+.shiny {
+  font-size: 40px;
+  background-image: 
+  linear-gradient(15deg, #07f, #0ff);
+  background-repeat: repeat;
+  /* animation: shine 10s infinite; */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
