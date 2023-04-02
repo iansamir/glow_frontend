@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meditation</title>
+    <link rel="stylesheet" href="meditation.css">
+    <link rel="stylesheet" href="timer.css">
+</head>
+
+<body>
+    <div id="meditation-div">
+        <div id="prompt" style="color: #777; outline:none;" contenteditable="true">
+            I want to go to sleep with a calm,
+            soothing meditation with tropical sounds for 15 minutes.
+            <!-- <span id="meditation-type">breathing meditation</span> for 
+            <span id="meditation-duration">5 minutes</span>. -->
+        </div>
+        <img id="meditation-ball" style="margin-bottom: 10%" src="/images/meditation.gif">
+        <div style="display: none" id="timer"></div>
+        <button>Begin</button>
+    </div>
+    <div id="chatbox" style="display: none">
+        <div id="blur"></div>
+        <div id="conversation"></div>
+        <div id="suggestion-div">
+            <div class="suggestion">Play a recommended meditation for me.</div>
+            <div class="suggestion">Make it a sleep meditation for 20 minutes.</div>
+            <div class="suggestion">Pause the current timer.</div>
+        </div>
+        <input id="user-input" placeholder="What would you like?" autocomplete="off">
+        <!-- <img id="talk" src="microphone-icon.png"> -->
+    </div>
+    <img id="open-ai" src="/images/open-ai.png">
+    <script src="meditation.js" type="module"></script>
+    <script src="voice.js" type="module"></script>
+    <script src="timer.js" type="module"></script>
+</body>
+
+</html>
