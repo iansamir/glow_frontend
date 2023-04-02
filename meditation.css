@@ -1,0 +1,180 @@
+#meditation-div {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 300px;
+}
+
+#prompt {
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-size: 20px;
+    max-width: 400px;
+}
+
+button {
+    bottom: -10%;
+    width: 180px;
+}
+
+#open-ai {
+    opacity: 0.5;
+    position: fixed;
+    bottom: 15%;
+    left: calc(50% - 20px);
+}
+
+* {
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    cursor: default;
+  }
+  
+  body {
+    background-image: linear-gradient(152deg, #fff, #ABCDFF, #FFA6FF);
+    height: 100vh;
+  }
+  
+  img {
+    width: 200px;
+  }
+  
+  .title {
+    font-family: Helvetica;
+    font-weight: 500;
+    font-size: 25px;
+  }
+  
+  .reps {
+    color: #07f;
+  }
+  
+  #time-element {
+    color: #f0f;
+  }
+  
+  .hint {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 300px;
+    max-height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* opacity: 0.7;  */
+  
+    max-width: 500px;
+    padding: 20px 50px 20px;
+  
+    border: 1px solid rgba(255, 255, 255, .25);
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.45);
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.25);
+  
+    backdrop-filter: blur(15px);
+    /* animation: fade-in ease 2s */
+  }
+  
+  #open-ai {
+    opacity: 0.6;
+    width: 50px;
+    position: fixed;
+    bottom: 5%;
+    /* left: 50%; */
+  }
+  
+  
+  #workout-div {
+    position: absolute; 
+    top: 70%;
+    opacity: 0.4;
+  
+  }
+  
+  .workout {
+    background: #fff;
+    padding: 30px 50px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    
+  }
+  
+  .workout p{
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  }
+  
+  @keyframes fade-in {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+  
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  button {
+    position: absolute;
+    bottom: -10%;
+    background-image: linear-gradient(90deg, #4fb, #4fe);
+    font-size: 18px;
+    color: #fff;
+    border: none;
+    padding: 15px;
+    width: 150px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px 1px #4fb;
+    backdrop-filter: blur(15px);
+    margin-top: 10px;
+  }
+  
+  input {
+    width: 100%;
+    border: none;
+    outline-style: none;
+    background: none;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-size: 20px;
+    margin: 20px;
+    padding: 10px;
+  }
+  
+  button:hover {
+    box-shadow: 0 0 40px 1px #4fb;
+  }
+  
+  button:active {
+    transform: scale(0.95);
+    filter: brightness(1.4);
+  }
+  
+  
+  .suggestion-div {
+    display: flex;
+    font-size: 14px;
+    margin-bottom: 20px;
+    animation: 2s ease fade-in;
+  }
+  
+  .suggestion {
+    opacity: 0.5;
+    padding: 10px;
+    text-align: center;
+    margin: 5px;
+    border: 1px solid rgba(255, 255, 255, .25);
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(15px);
+  }
+  
+  .suggestion:hover {
+    opacity: 0.8;
+  }
